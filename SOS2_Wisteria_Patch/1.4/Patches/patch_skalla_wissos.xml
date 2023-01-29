@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">	
+		<mods>
+			<li>Wisteria Corporation</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<success>Normal</success>
+			<operations>
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="S_WC_A_DRAGOON" or defName="S_WC_A_GRIZ" or defName="S_WC_A_WYVERN" or defName="S_WC_H_GRIZ" or defName="S_WC_H_VALIR" or defName="S_WC_H_ZEALOT" or defName="S_WC_H_WYVERN" or defName="S_WC_H_DRAGOON"]</xpath>
+					<value>
+						<apparel>
+							<tags>
+								<li>EVA</li>
+							</tags>
+						</apparel>
+					</value>
+				</li>
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="S_WC_A_DRAGOON" or defName="S_WC_A_GRIZ" or defName="S_WC_A_WYVERN" or defName="S_WC_H_GRIZ" or defName="S_WC_H_VALIR" or defName="S_WC_H_ZEALOT" or defName="S_WC_H_WYVERN" or defName="S_WC_H_DRAGOON"]/statBases/Insulation_Cold</xpath>
+					<value>
+						<Insulation_Cold>100</Insulation_Cold>
+					</value>
+				</li>			
+			</operations>
+		</match>
+	</Operation>
+</Patch>
