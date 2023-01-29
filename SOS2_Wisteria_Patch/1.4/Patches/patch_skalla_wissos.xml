@@ -8,7 +8,7 @@
 			<success>Normal</success>
 			<operations>
 				<li Class="PatchOperationAdd">
-					<xpath>/Defs/ThingDef[defName="S_WC_A_DRAGOON" or defName="S_WC_A_GRIZ" or defName="S_WC_A_WYVERN" or defName="S_WC_H_GRIZ" or defName="S_WC_H_VALIR" or defName="S_WC_H_ZEALOT" or defName="S_WC_H_WYVERN" or defName="S_WC_H_DRAGOON"]</xpath>
+					<xpath>/Defs/ThingDef[defName="S_WC_A_DRAGOON" or defName="S_WC_A_GRIZ" or defName="S_WC_A_WYVERN" or defName="S_WC_A_SEEKER_ARMOR" or defName="S_WC_H_VALIR" or defName="S_WC_H_ZEALOT" or defName="S_WC_H_WYVERN" or defName="S_WC_H_DRAGOON" or defName="S_WC_H_SEEKER_TYPE_B_HOOD"]</xpath>
 					<value>
 						<apparel>
 							<tags>
@@ -18,11 +18,17 @@
 					</value>
 				</li>
 				<li Class="PatchOperationReplace">
-					<xpath>/Defs/ThingDef[defName="S_WC_A_DRAGOON" or defName="S_WC_A_GRIZ" or defName="S_WC_A_WYVERN" or defName="S_WC_H_GRIZ" or defName="S_WC_H_VALIR" or defName="S_WC_H_ZEALOT" or defName="S_WC_H_WYVERN" or defName="S_WC_H_DRAGOON"]/statBases/Insulation_Cold</xpath>
+					<xpath>/Defs/ThingDef[defName="S_WC_A_DRAGOON" or defName="S_WC_A_GRIZ" or defName="S_WC_A_WYVERN" or defName="S_WC_A_SEEKER_ARMOR"]/statBases/Insulation_Cold</xpath>
 					<value>
-						<Insulation_Cold>100</Insulation_Cold>
+						<Insulation_Cold>55</Insulation_Cold>
 					</value>
-				</li>			
+				</li>		
+				<li Class="PatchOperationReplace">
+					<xpath>/Defs/ThingDef[defName="S_WC_H_VALIR" or defName="S_WC_H_ZEALOT" or defName="S_WC_H_WYVERN" or defName="S_WC_H_DRAGOON" or defName="S_WC_H_SEEKER_TYPE_B_HOOD"]/statBases/Insulation_Cold</xpath>
+					<value>
+						<Insulation_Cold>40</Insulation_Cold>
+					</value>
+				</li>	
 			</operations>
 		</match>
 	</Operation>
